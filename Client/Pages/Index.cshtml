@@ -1,0 +1,32 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+
+<div id="sketch-holder"></div>
+@*<div class="text-center">
+        <p><button onclick="send();">send</button></p>
+        <p>answer</p>
+        <p id="answerbox"></p>
+    </div>*@
+<div>
+    <input type="text" id="userInput" /><button>save</button>
+    <table style="width:200px">
+        <tbody id="score">
+            <tr>
+                <th>Player</th>
+                <th>Score</th>
+            </tr>
+            <tr>
+                <td>You</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/signalr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+<script src="~/js/site.js"></script>
